@@ -25,7 +25,6 @@ class MediaPage extends Component {
                 },
                 { songName: "For the child in you-Banat", id: 3, url: "https://media.hungama.com/c/4/333/858/57178077/57178077_128.mp3?HVydrz43CKIzReVbwp8XHZV1e_57c2xft-3Vx5m8WzmBcOCcy9pRR3bqCx7QMN4RyfMON7oMliBeGvI-obKk8TXvXm878D76qsrNeTISwJjW0ISpEmVHkXTd58ERuEQVopvQgg" }]
         }
-       // this.updateLikes = this.updateLikes.bind(this);
     }
     componentDidMount() {
         this.userData = JSON.parse(localStorage.getItem('user'));
