@@ -50,7 +50,7 @@ class Analytics extends Component {
                     pointHoverBorderWidth: 2,
                     pointRadius: 1,
                     pointHitRadius: 10,
-                    data: [2, 4, 6, 8, 10]
+                    data: [4, 2, 6, 4, 8]
                 }
             ]
         };
@@ -70,7 +70,7 @@ class Analytics extends Component {
                     borderWidth: 1,
                     hoverBackgroundColor: "rgba(255,99,132,0.4)",
                     hoverBorderColor: "rgba(255,99,132,1)",
-                    data: [2, 4, 6, 8, 10]
+                    data: [4, 4, 6]
                 },
 
                 {
@@ -80,7 +80,7 @@ class Analytics extends Component {
                     borderWidth: 1,
                     hoverBackgroundColor: "rgba(255,99,132,0.4)",
                     hoverBorderColor: "rgba(255,99,132,1)",
-                    data: [2, 4, 6, 8, 10]
+                    data: [2, 6, 7]
                 }
             ]
         };

@@ -13,8 +13,6 @@ class MediaPage extends Component {
             like2: 0,
             like3: 0,
             filter: "",
-            iconName:"fa fa-thumbs-up finger",
-            iconName1:'fa fa-thumbs-up finger',
             userName:'',
             songs: [
                 {
@@ -45,13 +43,6 @@ class MediaPage extends Component {
         // console.log(login, "login")
     }
 
-    count=()=>{
-        if(this.state.like1===1){
-            this.setState({
-               iconName1:"fa fa-thumbs-up name"
-            })
-        }
-    }
     updateLikes = (id) => {
         if (id === 1) {
              this.count()
@@ -113,7 +104,6 @@ class MediaPage extends Component {
                       Sign out</Link></DropdownItem>
                             </DropdownMenu>
                         </Dropdown>Welcome  {this.state.userName}
-                        <i onClick={() => this.updateLikes(1)} className={this.state.iconName1}></i>
                         </div>
                         </div>
                
@@ -121,7 +111,7 @@ class MediaPage extends Component {
                     {filteredData.map((val) => (<tbody>
                         <tr>
                             <td><span className="mr-2">{val.id === 1 ? like1:''
-                            }{val.id === 2 ?like2:''}{val.id === 3 ? like3:''}</span><i onClick={() => this.updateLikes(val.id)} className={this.state.iconName1}></i></td>
+                            }{val.id === 2 ?like2:''}{val.id === 3 ? like3:''}</span><i onClick={() => this.updateLikes(val.id)} className='fa fa-thumbs-up finger'></i></td>
                             <td>{val.songName}</td>
                             <td><ReactAudioPlayer
                                 controls
