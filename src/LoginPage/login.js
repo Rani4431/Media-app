@@ -5,7 +5,7 @@ class Login extends Component{
     constructor(props){
         super(props)
         this.state={
-userName:[],
+userName:'',
 passWord:'',
 error:''
         }
@@ -15,13 +15,11 @@ error:''
 
       if (localStorage.getItem('user')) {
           this.setState({
-            userName: this.userData.name,
-            passWord: this.userData.email,
+            userName: this.userData.userName,
           })
       } else {
           this.setState({
-            userName: [],
-            passWord: '',
+            userName: '',
           })
       }
   }

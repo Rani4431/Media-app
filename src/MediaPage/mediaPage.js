@@ -39,13 +39,10 @@ class MediaPage extends Component {
               userName: ''
             })
         }
-        // const login = localStorage.getItem('user')
-        // console.log(login, "login")
     }
 
     updateLikes = (id) => {
         if (id === 1) {
-             this.count()
             this.setState( {
                     like1:  1,
                     
