@@ -58,6 +58,10 @@ error:''
     dismissError=()=> {
         this.setState({ error: '' });
       }
+
+      handleSignUp=()=>{
+        alert('Login with your desired username and password')
+      }
     
 render(){
     const {userName,passWord,error}=this.state
@@ -79,7 +83,7 @@ render(){
     <input type="password"  name="password" value={passWord} placeholder="Password" onChange={(e)=>this.handlePassWordChange(e)}/>
 
     <p>  
-    <button type="submit" className="signUpButton" >Sign Up</button>
+    <button type="submit" className="signUpButton" onClick={()=>this.handleSignUp()}>Sign Up</button>
     <button type="button" className="signInButton" onClick={()=>this.handleSubmit()}>Sign In</button></p>
 
    </form>

@@ -6,7 +6,7 @@ class Analytics extends Component {
     constructor(props){
         super(props);
         this.state={
-            userName:[],
+            userName:'',
         }
     }
     componentDidMount() {
@@ -18,16 +18,13 @@ class Analytics extends Component {
             })
         } else {
             this.setState({
-              userName: [],
+              userName: '',
             })
         }
-        // const login = localStorage.getItem('user')
-        // console.log(login, "login")
+        
     }
 
     render() {
-        const login=localStorage.getItem('user')
-        console.log(login,"login")
         const line = {
             labels: this.state.userName,
             datasets: [
